@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    web_xxxx:
+        build: ./
+        image: web_xxxx
+        container_name: web_xxxx
+        ports:
+            - "80:8888"
+        restart: unless-stopped
