@@ -19,7 +19,7 @@
 
 在`EasePack.min.js`找到提示：`you find me, good luck for you! Now go to Upl00000000ad.php`
 
-2.访问`/Upl00000000ad.php`进行文件上传。通过尝试发现文件成功传上去，然后非图片的后缀又被改成`.jpg`，可以通过条件竞争来上传`websehll`。
+2.访问`/Upl00000000ad.php`进行文件上传。通过尝试发现文件成功传上去，然后非图片的后缀再被改成`.jpg`，所以可以通过条件竞争在被修改后缀前上传`websehll`。
 
 思路：使用两个线程，一个线程上传php文件，另一个线程访问传上去的php使之执行。
 
