@@ -1,0 +1,7 @@
+version: "2"
+services:
+  easy_ssti: 
+    build:
+      context: .  # 使用当前目录中的Dockerfile构建镜像
+    ports:
+      - "11736:8080"  # 将容器内部端口8080映射到主机上的端口11736

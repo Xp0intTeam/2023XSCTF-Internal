@@ -1,0 +1,17 @@
+body {
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* 根据需要调整背景大小 */
+}
+.center-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* 添加半透明的背景颜色 */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
