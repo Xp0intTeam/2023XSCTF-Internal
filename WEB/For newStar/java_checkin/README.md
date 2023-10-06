@@ -7,7 +7,7 @@
 1. java 反序列化漏洞
 
 - **描述：** 听说如今Web是Java的天下，于是菜鸡写了个非常简单的java程序，结果漏洞百出，估计要被打烂了。
-- **flag：** XSCTF{J@va_1s_v@3y_Imp03tent!!!!!!!!}
+- **flag：** XSCTF{J@va_1s_v@3y_Imp03tAnt!!!!!!!!}
 - **Writeup：** 
 
 payload如下
