@@ -1,0 +1,22 @@
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y gcc
+RUN apt-get install -y openssh-server
+RUN apt-get install -y sudo
+RUN apt-get install -y zsh
+RUN apt-get clean
+RUN service ssh start
+RUN echo "flag{sCnu8t@ixin9s10thx1ng}">/root/flag
+RUN chmod 500 /root/flag
+COPY ./ls.c /root/ls.c
+RUN chmod 700 /etc/sudoers
+RUN sed -e "44a noweb   ALL=(root) /bin/rm, /bin/ln" /etc/sudoers
+RUN gcc /root/ls.c -o key
+RUN chown root key
+RUN chmod 4755 key
+RUN rm /root/ls.c
+RUN useradd --create-home --no-log-init --shell /bin/bash noweb \
+&& adduser noweb sudo \
+&& echo 'noweb:123456' | chpasswd
+RUN mv key /home/noweb/key
+CMD ["/usr/sbin/sshd", "-D"]
