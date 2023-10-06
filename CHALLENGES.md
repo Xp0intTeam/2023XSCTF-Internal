@@ -47,3 +47,4 @@
 
 | 序号 | 名称 | 难度 | 考点 | 描述 | flag | 出题人 | Hint | 备注 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+|0|ret2text|简单|ret2text|checkin|XSCTF{Check1n_xv6_pwn_sooooo_easy}|133NSON||热身赛|
