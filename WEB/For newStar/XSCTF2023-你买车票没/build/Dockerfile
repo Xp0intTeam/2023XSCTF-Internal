@@ -1,13 +1,19 @@
+# 使用 Python 3.9 镜像作为基础镜像
 FROM python:3.9
 
-WORKDIR /app
+# 将应用程序代码复制到容器中
+COPY src /app
 
-COPY src/ /app
+# 安装应用程序依赖
+RUN     groupadd -r appgroup && \
+	useradd -r -g appgroup appuser && \
+	chown -R appuser:appgroup /app && \
+	chmod -R 500 /app && \
+	pip install -r /app/requirements.txt && \
+	echo "XSCTF{SsT1_MilKTea_m1LktEa!}" > /flag
 
-RUN pip install -r /app/requirements.txt
+USER appuser
 
-RUN echo "XSCTF{SsT1_MilKTea_m1LktEa!}" > /flag
-
-CMD ["python", "app.py"]
+CMD ["python", "/app/app.py"]
 
 EXPOSE 8080
