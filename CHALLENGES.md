@@ -15,7 +15,11 @@
 
 | 序号 | 名称 | 难度 | 考点 | 描述 | flag | 出题人 | Hint | 备注 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-|0|隐秘的backdoor|中等|php版本后门|后门给你了，来吧|flag{B@ck_do0r\_!\_B4ck_d0or_!}|pANz0e|php8.1||
+|  0   |    ez_game     | 简单 |    |           听说ctfer打到-1000分就能通关游戏了！            |       flag{D0_w311_ctfer\_!\_1s_it_a_g00d_g@me\_?}       |  pANz0e  |                    | 热身赛 |
+|   1  |     ez_RCE     | 简单 |  命令执行    |                 哎呀，空格都没了，呜呜呜~                 | falg{Rc3_15_th3_m0st_Intere5t1ng_vu1nerability\_!\_!} |  pANz0e  |      替代空格      | 热身赛 |
+|   2  |     ezphp      | 简单 |  php伪协议  |                 我得想想怎么才能取而代之                  |            flag{phP_lS_th9_be5T_l4ngUa9e}             | Fxizenta |    php://input     | 热身赛 |
+|   3  |    easy_sql    | 中等 |  bool盲注   | 嘉然，为了你我要打ctf！！！咦？这里这么注入不进去呢？奇怪 |         flag{Gu@ng2hU_j1arAn_Dundun_ji3Chan9}         | Fxizenta | 登录功能不是注入点 | 热身赛 |
+|4|隐秘的backdoor|中等|php版本后门|后门给你了，来吧|flag{B@ck_do0r\_!\_B4ck_d0or_!}|pANz0e|php8.1||
 
 ## 3. Reverse:
 
