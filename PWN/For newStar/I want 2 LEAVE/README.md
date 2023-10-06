@@ -7,7 +7,7 @@
 1. printf函数的输出终止情况
 2. leave_ret 栈迁移
 
-- **描述：** 呜呜呜呜CTF好难，想跑路(LEAVE)了
+- **描述：** 呜呜呜呜CTF好难，想跑路了
 - **flag：** XSCTF{CS2's_strafing_is_a_piece_of_s***}
 - **Writeup：**
 
