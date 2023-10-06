@@ -1,7 +1,7 @@
 * 题目名称：Key
 * 出题人：Qanux
 * 题目类型：Pwn
-* 题目难度：中等
+* 题目难度：中等偏下
 * 考点：house of force
 * 描述：libc版本为2.27
 * flag:XSCTF{h0u4e_0F_F0r4e_1s_v3rY_ea4y}
