@@ -20,6 +20,10 @@
 |   2  |     ezphp      | 简单 |  php伪协议  |                 我得想想怎么才能取而代之                  |            flag{phP_lS_th9_be5T_l4ngUa9e}             | Fxizenta |    php://input     | 热身赛 |
 |   3  |    easy_sql    | 中等 |  bool盲注   | 嘉然，为了你我要打ctf！！！咦？这里这么注入不进去呢？奇怪 |         flag{Gu@ng2hU_j1arAn_Dundun_ji3Chan9}         | Fxizenta | 登录功能不是注入点 | 热身赛 |
 |4|隐秘的backdoor|中等|php版本后门|后门给你了，来吧|flag{B@ck_do0r\_!\_B4ck_d0or_!}|pANz0e|php8.1||
+|  5  |  canyoupassit  | 中等 |   md5碰撞   |               Do you really know about md5?               |                       flag{y0\|nDeedReA11yk$nwAb0uTMD5!~_~^_^} |                    | md5碰撞 ||
+|6| Hacker | 容易 | JavaScript | Admin的站点被挂黑页了怎么办，重要的东西都被删了TuT | xsctf{Y0u_can_no7_f1nd_m3\_?} | pANz0e | 得想个办法让代码停止 ||
+|7| reallyExpensive | 简单 |  | 签到题，flag真的不贵 | flag{^==^Y0uG@t$(t]$[r)^u^(e)-F10g!^\<>^} |  | flag不仅白送还倒贴 ||
+|8| kk园区审核员 | 简单 | xss | ... | xsctf{Y0u_succ3s5ful1y_x55_m3} | pANz0e | 你能不能拿到我的美味曲奇的？ ||
 
 ## 3. Reverse:
 
