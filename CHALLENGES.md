@@ -10,6 +10,8 @@
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 |0|ezgame|容易|f12|是男人就拿到1000000分！|flag{basju_D0G006706_iajdisaia}|Fxizenta|改分数||
 |1|word心|中等|word隐写|啊~有东西跑进来了|xsctf{Y0u_g07_h@lf_my_h3ar7_g1v3_y0u_an0ther_h@lf}|pANz0e|word隐写||
+|2| Set-uid | 中等 | suid提权 | ssh noweb/123456 IP:10722(替换成实际IP)，flag in /root/flag | flag{sCnu8t@ixin9s10thx1ng} | Fxizenta | 1.only zsh 2.noweb  ALL=(root) /bin/rm, /bin/ln ||
+
 
 ## 2. WEB:
 
@@ -29,11 +31,16 @@
 
 | 序号 | 名称 | 难度 | 考点 | 描述 | flag | 出题人 | Hint | 备注 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+|0|ezAPK|简单|随机数模拟|你懂KT吗？|flag{43648c93-bb042eb50bb4-a73a-3b5e-aa52}|y9nhjy|随机数模拟||
 
 ## 4. Crypto:
 
 | 序号 | 名称 | 难度 | 考点 | 描述 | flag | 出题人 | Hint | 备注 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+|0| ezDES | 简单 | des | 简化化化化化化化化的DES加密 | XSCTF{6b2d76d8-a09c-1f80-15c5-039a8f1c361c} | LTZ | 1）对称密码的特点  2）UUID格式 ||
+|1| Fermat | 简单 | 费马小定理 | 简单的RSA加密 | XSCTF{F3rm4t_15_b453_0f_numb3r_th30ry} | LTZ | 注意类型一致 ||
+|2| logging | 简单 | DLP | 载入中。。 | xsctf{Eiden_rLn9_m@ke_m3_hap1xiA} | modi | 1）sagemath解DLP  2）discrete_log ||
+|3| RSA | 简单 | rsa | 小明掌握了RSA加密算法，但不知道如何获取关键秘钥，你能帮帮他吗？ | XSCTF{yafu_is_strong!} | LTZ | 1）直接分解大素数  2）yafu ||
 
 
 ## 5. PWN:
