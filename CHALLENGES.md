@@ -8,9 +8,8 @@
 
 | 序号 | 名称 | 难度 | 考点 | 描述 | flag | 出题人 | Hint | 备注 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-|0|ezgame|容易|f12|是男人就拿到1000000分！|flag{basju_D0G006706_iajdisaia}|Fxizenta|改分数||
-|1|word心|中等|word隐写|啊~有东西跑进来了|xsctf{Y0u_g07_h@lf_my_h3ar7_g1v3_y0u_an0ther_h@lf}|pANz0e|word隐写||
-|2| Set-uid | 中等 | suid提权 | ssh noweb/123456 IP:10722(替换成实际IP)，flag in /root/flag | flag{sCnu8t@ixin9s10thx1ng} | Fxizenta | 1.only zsh 2.noweb  ALL=(root) /bin/rm, /bin/ln ||
+|0|word心|中等|word隐写|啊~有东西跑进来了|xsctf{Y0u_g07_h@lf_my_h3ar7_g1v3_y0u_an0ther_h@lf}|pANz0e|word隐写||
+|1| Set-uid | 中等 | suid提权 | ssh noweb/123456 IP:10722(替换成实际IP)，flag in /root/flag | flag{sCnu8t@ixin9s10thx1ng} | Fxizenta | 1.only zsh 2.noweb  ALL=(root) /bin/rm, /bin/ln ||
 
 
 ## 2. WEB:
@@ -27,6 +26,7 @@
 |7| reallyExpensive | 简单 |  | 签到题，flag真的不贵 | flag{^==^Y0uG@t$(t]$[r)^u^(e)-F10g!^\<>^} |  | flag不仅白送还倒贴 ||
 |8| kk园区审核员 | 简单 | xss | ... | xsctf{Y0u_succ3s5ful1y_x55_m3} | pANz0e | 你能不能拿到我的美味曲奇的？ ||
 |9| java_checkin | 中等 | java反序列化 | 听说如今Web是Java的天下，于是菜鸡写了个非常简单的java程序，结果漏洞百出，估计要被打烂了。 | XSCTF{J@va_1s_v@3y_Imp03tAnt!!!!!!!!} | ABU |  ||
+|10|ezgame|容易|f12|是男人就拿到1000000分！|flag{basju_D0G006706_iajdisaia}|Fxizenta|改分数||
 
 ## 3. Reverse:
 
