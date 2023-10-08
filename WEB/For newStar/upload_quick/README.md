@@ -13,7 +13,7 @@
 
 1.获取页面源码（3种方法）：
 
-- `view-source:url`
+- `view-source:url` / Ctrl + U
 - 打开开发者工具（不要用快捷键，已经锁死）
 - burpsuit
 
