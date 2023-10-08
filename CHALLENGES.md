@@ -25,7 +25,7 @@
 |6| Hacker | 容易 | JavaScript | Admin的站点被挂黑页了怎么办，重要的东西都被删了TuT | xsctf{Y0u_can_no7_f1nd_m3\_?} | pANz0e | 得想个办法让代码停止 ||
 |7| reallyExpensive | 简单 |  | 签到题，flag真的不贵 | flag{^==^Y0uG@t$(t]$[r)^u^(e)-F10g!^\<>^} |  | flag不仅白送还倒贴 ||
 |8| kk园区审核员 | 简单 | xss | ... | xsctf{Y0u_succ3s5ful1y_x55_m3} | pANz0e | 你能不能拿到我的美味曲奇的？ ||
-|9| java_checkin | 中等 | java反序列化 | 听说如今Web是Java的天下，于是菜鸡写了个非常简单的java程序，结果漏洞百出，估计要被打烂了。 | XSCTF{J@va_1s_v@3y_Imp03tAnt!!!!!!!!} | ABU |  ||
+|9| java_checkin | 困难 | java反序列化 | 听说如今Web是Java的天下，于是菜鸡写了个非常简单的java程序，结果漏洞百出，估计要被打烂了。 | XSCTF{J@va_1s_v@3y_Imp03tAnt!!!!!!!!} | ABU |  ||
 |10|ezgame|容易|f12|是男人就拿到1000000分！|flag{basju_D0G006706_iajdisaia}|Fxizenta|改分数||
 |11| shabby_website | 中等 | 原型链污染 ssti | 快来尝试一下简单的代码审计，代码量很少，毕竟出题人连前端都懒得写。 | dynamic flag | Rieß | 可以尝试在本地对源码npm install一下看看有什么漏洞 ||
 
