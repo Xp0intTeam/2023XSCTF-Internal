@@ -6,7 +6,7 @@
 
 1. 二维码
 
-- **描述：** 是谁把我的excel弄的奇奇怪怪的！
+- **描述：** 啊啊啊Mr.Code把我的excel弄乱了，他竟然让我扫码看个广告才能告诉我怎么一回事
 - **flag：** XSCTF{WHOoo_ME55_the_EXCcCeL}
 - **Writeup：** 
 
