@@ -6,7 +6,7 @@
 
 1. 二维码
 
-- **描述：** 是谁又把我的excel弄的更加奇怪了啊啊啊啊啊啊！
+- **描述：** Mr.Code又把我的excel弄的一团糟！什么也看不到！这次我去找他，竟然让我先排队？？
 - **flag：** XSCTF{wH4t_4_BadbaD_EXCcCeL}
 - **Writeup：** 
 
