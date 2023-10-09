@@ -9,5 +9,4 @@
 
 - **描述：** 跑路结束！原神，启动！尘歌壶，养猪！
 - **flag：** XSCTF{C0ngratulati0n_u_are_the_real_her0}
-- **Writeup：**
 
