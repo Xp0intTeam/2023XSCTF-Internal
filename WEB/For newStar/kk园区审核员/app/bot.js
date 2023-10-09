@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer')
 
 const CONFIG = {
-    FLAG: process.env['FLAG'] || "xsctf{Y0u_succ3s5ful1y_x55_m3}"
+    FLAG: process.env['FLAG'] || "XSCTF{Y0u_succ3s5ful1y_x55_m3}"
 }
 
 exports.visit = async function () {
