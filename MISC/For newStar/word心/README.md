@@ -11,8 +11,8 @@
 1. word隐写
 
 
-* **描述：**  啊~有东西跑进来了
+* **描述：**  啊~有东西跑进来了(flag格式xsctf{**})
 
-* **flag：**xsctf{Y0u_g07_h@lf_my_h3ar7_g1v3_y0u_an0ther_h@lf}
+* **flag：** xsctf{Y0u_g07_h@lf_my_h3ar7_g1v3_y0u_an0ther_h@lf}
 
 * **Writeup：** word解压得到FLAG2，打开word最后一页，再设置里面打开显示隐藏文字，选中最后一页的内容换个颜色得FLAG1
