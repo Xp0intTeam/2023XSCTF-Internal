@@ -1,9 +1,0 @@
-version: '2'
-
-services:
-  app:
-    build: .
-    ports:
-      - "20080:80"
-    environment:
-      - FLAG=XSCTF{Y0u_succ3s5ful1y_x55_m3}
