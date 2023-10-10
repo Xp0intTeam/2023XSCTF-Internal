@@ -1,0 +1,8 @@
+version: '3'
+services:
+  badbadfilename:
+    build: ../
+    ports:
+      # 设置了暴露端口
+      - "40166:80"
+    restart: always
