@@ -7,7 +7,7 @@
 1. 文件上传
 2. 条件竞争
 
-- **描述：** newnew的逻辑总是颠三倒四，令人困惑。milktea经常以飞快的速度在不经意间看到newnew的秘密
+- **描述：** newnew的逻辑总是颠三倒四，令人困惑，milktea经常以飞快的速度在不经意间看到newnew的秘密
 - **flag：** `XSCTF{fi1e_uplooooooooad_intetesting_491346}`
 - **Writeup：** 
 
