@@ -22,7 +22,7 @@
 
 * **Hints：**
 
-[WIKI.GG](http://wiki.gg)
+[WIKI.VG](http://wiki.vg)
 
 * **flag：**
 
