@@ -7,7 +7,7 @@
 1. IO or house_of_husk
 1. 检索+耐心
 
-- **描述：** 跑路结束！原神，启动！尘歌壶，养猪！
+- **描述：** ez题，签到题，login题，你懂我意思吧？
 - **flag：** XSCTF{C0ngratulati0n_u_are_the_real_her0}
 - **Writeup：**
 
