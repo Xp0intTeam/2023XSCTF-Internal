@@ -28,6 +28,7 @@
 |9| java_checkin | 困难 | java反序列化 | 听说如今Web是Java的天下，于是菜鸡写了个非常简单的java程序，结果漏洞百出，估计要被打烂了。 | XSCTF{J@va_1s_v@3y_Imp03tAnt!!!!!!!!} | ABU |  ||
 |10|ezgame|容易|f12|是男人就拿到1000000分！|flag{basju_D0G006706_iajdisaia}|Fxizenta|改分数||
 |11| shabby_website | 中等 | 原型链污染 ssti | 快来尝试一下简单的代码审计，代码量很少，毕竟出题人连前端都懒得写。 | dynamic flag | Rieß | 可以尝试在本地对源码npm install一下看看有什么漏洞 ||
+|12| upload_quick | 中等 | 文件上传 条件竞争 | newnew的逻辑总是颠三倒四，令人困惑，milktea经常以飞快的速度在不经意间看到newnew的秘密 | dynamic flag | fru1ts |  ||
 
 ## 3. Reverse:
 
