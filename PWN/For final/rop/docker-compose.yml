@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+    pwn_juesai-rop:
+        build: ./
+        image: pwn_juesai-rop
+        container_name: pwn_juesai-rop
+        ports:
+            - "40052:42002"
+        restart: unless-stopped
+        volumes:
+            - /dev/null:/home/ctf/dev/null
+            - /dev/zero:/home/ctf/dev/zero
+            - /dev/random:/home/ctf/dev/random
+            - /dev/urandom:/home/ctf/dev/urandom
