@@ -1,0 +1,15 @@
+
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "40122:5000"
+    environment:
+      - SECRET_KEY="n1wNew_lik1_MilktEa"
+      - FLAG="XSCTF{n1wnew_Att@7k_mi1k_By_Ssrf_Re$is_431876}"
+    volumes:
+     - ./flask-server:/XSCTF
+  redis:
+    image: "redis"
+    
