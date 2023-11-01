@@ -1,0 +1,11 @@
+version: '2'
+services:
+    python:
+        build: ./
+        # 端口映射
+        volumes:
+            - ./src:/app
+        ports:
+            - "30800:5000"
+        # 容器名称
+        container_name: "compose-python"

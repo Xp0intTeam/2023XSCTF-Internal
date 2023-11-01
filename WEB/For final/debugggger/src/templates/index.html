@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cool Txt File</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic%20Sans%20MS" />
+  <style>
+    html {
+      background-color: #d9bd62;
+      background-image: url('static/wowe.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: bottom right;
+      font-family: 'Comic Sans MS';
+    }
+
+    .colors {
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+    pre {
+      white-space:pre-wrap;
+      word-break:break-all;
+      word-wrap:break-word;
+    }
+  </style>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".colors");
+      const colors = ["#EA7373", "#DE8135", "#FFFF6A", "#5DD535", "#3691E1", "#36E1E1", "#641B9B"];
+      for (let el of elements)
+        el.innerHTML = 
+          el.textContent.split(" ")
+            .map((s, i) => `<span style="color: ${colors[i % colors.length]};">${s}</span>`)
+            .join(" ");
+    })
+  </script>
+</head>
+
+<body>
+  <h1 class="colors">Cool txt file from Flask</h1>
+  <h4 class="colors">Please select a pasta from our file list and hack me ! ! !</h4>
+  <form>
+    <select name="file">
+      <option value="{{filelist[0]}}" selected>{{filelist[0]}}</option>
+      {%for file in filelist[1:] %}
+        <option value="{{file}}">{{file}}</option>>
+      {% endfor %}
+    </select>
+    <input type="submit" id="txt"/>
+  </form>
+  <pre>{{text|safe}}</pre>
+  <script>
+    $("#txt").on('click', function() {
+            $.get({
+                url: '/index',
+                data: `file=${encodeURIComponent($("select[name='file']").val())}`
+            });
+        });
+  </script>
+</body>
+
+</html>
