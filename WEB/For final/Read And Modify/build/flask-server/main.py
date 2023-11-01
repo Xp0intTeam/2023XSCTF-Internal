@@ -5,7 +5,7 @@ from modules.Gophers import GopherAdapter
 from modules.files import LocalFileAdapter 
 
 
-def check(url):
+def check_to_do(url):
     try:
         s = requests.Session()
         s.mount("xsctf://", GopherAdapter())
