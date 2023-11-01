@@ -15,7 +15,7 @@ r = redis.Redis(host='redis', port=6379)
 def index():
     if request.method == 'POST':
         url = str(request.form.get('url'))
-        resp = check(url)
+        resp = check_to_do(url)
         return resp
     else:
         resp = make_response(render_template('index.html'))
