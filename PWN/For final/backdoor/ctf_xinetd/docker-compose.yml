@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    pwn:
+        build: ./
+        image: backdoor
+        ports:
+            - "60001:9999"
+        pids_limit: 1024
+        # cpus: 0.5
+        restart: unless-stopped
+        # privileged: true
