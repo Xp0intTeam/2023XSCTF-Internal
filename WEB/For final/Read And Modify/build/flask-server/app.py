@@ -3,7 +3,7 @@ import redis
 import os
 import random
 import string
-from main import check
+from main import check_to_do
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
