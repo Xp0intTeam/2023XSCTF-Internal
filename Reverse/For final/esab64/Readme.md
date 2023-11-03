@@ -1,4 +1,5 @@
 - 题目名称：esab64
 - 考点：异常处理，base64
 - 描述：C语言好麻烦啊，还是C++好用
+- flag：XSCTF{C++_1s_th3_b35t_l4nguag3_i^_th1s_w0r1d!}
 - writeup：换表倒序base64，需按每四个字符为一组倒序进行正常的base64解密，再将结果进行异或
