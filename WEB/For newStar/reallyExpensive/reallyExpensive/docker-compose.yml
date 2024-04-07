@@ -1,0 +1,20 @@
+version: '3'
+services:
+  webapp:
+    build: ./webapp
+    container_name: myWeb
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:  
+      - my_network
+  db:
+    build: ./mysql
+    container_name: myMysql
+    ports:
+      - "3306:3306"
+    networks:  
+      - my_network
+networks:  
+  my_network:  

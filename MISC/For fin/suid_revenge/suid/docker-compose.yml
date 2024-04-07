@@ -1,6 +1,0 @@
-version: '2'
-services:
-  suid:
-    build: .
-    ports:
-     - "10022:22"
