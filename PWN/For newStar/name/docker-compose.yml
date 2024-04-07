@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+    pwn_chusai_name:
+        build: ./
+        image: pwn_chusai_name
+        container_name: pwn_chusai_name
+        ports:
+            - "40009:41000"
+        restart: unless-stopped
+        volumes:
+            - /dev/null:/home/ctf/dev/null
+            - /dev/zero:/home/ctf/dev/zero
+            - /dev/random:/home/ctf/dev/random
+            - /dev/urandom:/home/ctf/dev/urandom

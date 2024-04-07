@@ -1,0 +1,28 @@
+FROM ubuntu:22.04 AS builder
+FROM ghcr.io/w4terdr0p/w4terctf-2023/xinetd:alpine
+
+COPY init.sh /init.sh
+COPY xinetd.conf /etc/xinetd.conf
+
+RUN chmod +x /init.sh && \
+    chown -R ctf:ctf /home/ctf && \
+    chmod -R 750 /home/ctf && \
+    cp -R /lib* /home/ctf && \
+    mkdir /home/ctf/lib64  && \
+    mkdir /home/ctf/dev  && \
+    mkdir /home/ctf/bin && \
+    mkdir -p /home/ctf/lib/x86_64-linux-gnu/ && \
+    mkdir -p /home/ctf/lib32/ && \
+    cp /bin/sh /home/ctf/bin && \
+    cp /bin/ls /home/ctf/bin && \
+    cp /bin/cat /home/ctf/bin && \
+    cp /bin/base64 /home/ctf/bin
+
+COPY --from=builder /lib/x86_64-linux-gnu/libc.so.6 /home/ctf/lib/x86_64-linux-gnu/
+COPY --from=builder /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /home/ctf/lib64/
+COPY name /home/ctf/name
+RUN chown ctf:ctf /home/ctf/name && chmod 500 /home/ctf/name
+
+# ENV GZCTF_FLAG="flag{5418ce4d815c}"
+
+CMD ["xinetd", "-dontfork"]
